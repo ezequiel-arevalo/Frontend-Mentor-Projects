@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-style:  normal;
+  font-display: swap;
+  src: url('../fonts/outfit/Outfit-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-weight: 600;
+  font-style:  normal;
+  font-display: swap;
+  src: url('../fonts/outfit/Outfit-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-weight: 700;
+  font-style:  normal;
+  font-display: swap;
+  src: url('../fonts/outfit/Outfit-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  font-weight: 400;
+  font-style:  normal;
+  font-display: swap;
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--Stone-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+}
+
+.card {
+  background-color: var(--White);
+  padding: 28px;
+  border-radius: 1rem;
+  max-width: 50rem;
+  margin: 8rem 0px;
+}
+
+.card > img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.card > h3 {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-size: 3rem;
+  color: var(--Stone-900);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Young Serif', system-ui, -apple-system, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+
+h3, td, ol > li {
+  color: var(--Brown-800);
+}
+
+p {
+  color: var(--Stone-600);
+}
+
+#preparation__section {
+  background-color: var(--Rose-50);
+  padding: 1rem;
+}
+
+#preparation__section > h4 {
+  color: var(--Rose-800);
+  font-size: 1rem;
+  text-indent: 20px;
+  font-weight: 600;
+}
+
+#preparation__section > ul {
+  list-style-type: disc;
+  color: var(--Rose-800);
+}
+
+#ingredients__section,
+#instructions__section {
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+#ingredients__section > ul {
+  list-style-type: disc;
+  color: var(--Brown-800);
+}
+
+ul > li > p,
+ol > li > p {
+  padding-left: 20px;
+}
+
+section > table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+table{
+  padding: 10px;
+  margin: 0px auto;
+}
+
+thead > tr,
+tbody > tr {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+th, td {
+  color: var(--Stone-600);
+  padding: 10px;
+  border-bottom: 1px solid var(--Stone-150);
+  font-weight: 400;
+  text-align: left;
+}
+
+td {
+  color: var(--Brown-800);
+  font-weight: 700;
+}
