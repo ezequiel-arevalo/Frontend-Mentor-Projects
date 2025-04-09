@@ -1,14 +1,9 @@
-/* 
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 600, 700
-*/
-
 @font-face {
   font-family: 'Inter';
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/static/Inter-Regular.ttf');
+  src: url('../fonts/Inter-Regular.ttf');
 }
 
 @font-face {
@@ -16,7 +11,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/static/Inter-SemiBold.ttf');
+  src: url('../fonts/Inter-SemiBold.ttf');
 }
 
 @font-face {
@@ -24,13 +19,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/static/Inter-Bold.ttf');
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  src: url('../fonts/Inter-Bold.ttf');
 }
 
 :root {
