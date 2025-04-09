@@ -1,0 +1,127 @@
+/* 
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+*/
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/static/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/static/Inter-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+  
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 1rem;
+  overflow-y: hidden;
+  background-color: var(--Grey-900);
+  color: white;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+}
+
+.card {
+  max-width: 24rem;
+  padding: 2rem;
+  background-color: var(--Grey-800);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.card > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 999px;
+  margin: 0px auto;
+}
+
+.card > h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: var(--White);
+}
+
+.card > address {
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Green);
+}
+
+.card > p {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+menu > ul {
+  width: 100%;
+}
+
+menu > ul > li {
+  margin: 12px 0px;
+  background-color: var(--Grey-700);
+  list-style-type: none;
+  border-radius: 0.5rem;
+  transition: background-color 300ms ease-in-out;
+}
+
+menu > ul > li:hover {
+  background-color: var(--Grey-900);
+}
+
+menu > ul > li > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+menu > ul > li > a:hover {
+  color: var(--Green);
+}
