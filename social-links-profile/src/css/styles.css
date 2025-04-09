@@ -72,6 +72,7 @@ body {
   object-fit: cover;
   border-radius: 999px;
   margin: 0px auto;
+  margin-bottom: 30px;
 }
 
 .card > h3 {
