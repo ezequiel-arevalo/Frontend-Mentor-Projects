@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: url('../fonts/HankenGrotesk-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url('../fonts/HankenGrotesk-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+  src: url('../fonts/HankenGrotesk-ExtraBold.ttf');
+}
+
+:root {
+  --Light-red: hsla(0, 100%, 67%, 0.2);
+  --Orangey-yellow: hsla(39, 100%, 56%, 0.2);
+  --Green-teal: hsla(166, 100%, 37%, 0.2);
+  --Cobalt-blue: hsla(234, 85%, 45%, 0.2);
+  
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  background-color: var(--Pale-blue);
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  max-width: 42rem;
+  border-radius: 1.5rem;
+  background-color: var(--White);
+
+  display: flex;
+  flex-direction: row;
+}
+
+article > .content__left {
+  padding: 2rem;
+  border-radius: inherit;
+  background: linear-gradient(var(--Light-slate-blue),var(--Light-royal-blue));
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article > .content__left > #circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 20px 0px;
+  background: linear-gradient(var(--Dark-gray-blue), var(--Persian-blue));
+}
+
+article > .content__left > #circle > span{
+  font-size: 4rem;
+  color: white;
+  font-weight: 800;
+}
+
+article > .content__left > h3,
+article > .content__left > #circle > sub {
+  color: var(--Light-lavender);
+}
+
+article > .content__left > h4{
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+}
+
+article > .content__left > p{
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--Light-lavender);
+}
+
+article > .content__right > h3 {
+  text-align: left;
+  color: var(--Dark-gray-blue);
+  margin-bottom: 20px;
+}
+
+article > .content__right {
+  border-radius: inherit;
+  padding: 2rem;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+article > .content__right > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article > .content__right > ul > li {
+  width: 100%;
+  margin: 10px 0px;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+
+article > .content__right > ul > li:nth-child(1) {
+  background-color: var(--Light-red);
+}
+
+article > .content__right > ul > li:nth-child(1)::before {
+  content: url('../images/icon-reaction.svg');
+}
+
+article > .content__right > ul > li:nth-child(2) {
+  background-color: var(--Orangey-yellow);
+}
+
+article > .content__right > ul > li:nth-child(2)::before {
+  content: url('../images/icon-memory.svg');
+}
+
+article > .content__right > ul > li:nth-child(3) {
+  background-color: var(--Green-teal);
+}
+
+article > .content__right > ul > li:nth-child(3)::before {
+  content: url('../images/icon-verbal.svg');
+}
+
+article > .content__right > ul > li:nth-child(4) {
+  background-color: var(--Cobalt-blue);
+}
+
+article > .content__right > ul > li:nth-child(4)::before {
+  content: url('../images/icon-visual.svg');
+}
+
+article > .content__right > ul > li > span{
+  width: 12px;
+  background-color: antiquewhite;
+}
+
+button {
+  color: white;
+  padding: 15px;
+  border-radius: 1rem;
+  margin-top: 20px;
+  background-color: var(--Dark-gray-blue);
+  cursor: pointer;
+}
