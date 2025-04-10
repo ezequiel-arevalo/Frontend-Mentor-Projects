@@ -139,7 +139,7 @@ article > .content__right > ul > li {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 10px;
   border-radius: 0.5rem;
 }
@@ -148,38 +148,39 @@ article > .content__right > ul > li:nth-child(1) {
   background-color: var(--Light-red);
 }
 
-article > .content__right > ul > li:nth-child(1)::before {
-  content: url('../images/icon-reaction.svg');
-}
-
 article > .content__right > ul > li:nth-child(2) {
   background-color: var(--Orangey-yellow);
-}
-
-article > .content__right > ul > li:nth-child(2)::before {
-  content: url('../images/icon-memory.svg');
 }
 
 article > .content__right > ul > li:nth-child(3) {
   background-color: var(--Green-teal);
 }
 
-article > .content__right > ul > li:nth-child(3)::before {
-  content: url('../images/icon-verbal.svg');
-}
-
 article > .content__right > ul > li:nth-child(4) {
   background-color: var(--Cobalt-blue);
-}
-
-article > .content__right > ul > li:nth-child(4)::before {
-  content: url('../images/icon-visual.svg');
 }
 
 article > .content__right > ul > li > span{
   width: 12px;
   background-color: antiquewhite;
 }
+
+article > .content__right > ul > li > p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+article > .content__right > ul > li > p .icon img {
+  width: 16px;
+  height: 16px;
+}
+
+article > .content__right > ul > li > span.icon {
+  background-color: none; 
+  width: auto; 
+}
+
 
 button {
   color: white;
