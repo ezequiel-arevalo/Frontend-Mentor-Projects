@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Overpass';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Overpass-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Overpass';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/Overpass-Bold.ttf');
+}
+
+:root {
+  --Orange-500: hsl(25, 97%, 53%);
+
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Grey-950);
+  padding: 1rem;
+  font-size: 15px;
+  font-family: 'Overpass', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.rating-card {
+  padding: 1rem;
+  border-radius: 2rem;
+  max-width: 25rem;
+  background: linear-gradient(to bottom, #222933, #181F27);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.rating-card__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.rating-card__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  background-color: var(--Grey-900);
+}
+
+.rating-card__review {
+  display: none;
+}
+
+.rating-card__title {
+  font-size: 1.7rem;
+  color: var(--White);
+  font-weight: 700;
+}
+
+.rating-card__description {
+  color: var(--Grey-500);
+  text-align: left;
+}
+
+.rating-card__numbers-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.rating-card__numbers-item {
+  list-style-type: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  background-color: var(--Grey-900);
+  place-content: center;
+  text-align: center;
+  font-weight: 700;
+  color: var(--Grey-500);
+
+  cursor: pointer;
+  transition: background 300ms ease-in-out;
+}
+
+.rating-card__numbers-item:hover {
+  background-color: var(--Orange-500);
+  color: var(--Grey-950);
+}
+
+.rating-card__numbers-item:focus {
+  background-color: var(--White);
+  color: var(--Grey-950);
+}
+
+.rating-card__button {
+  display: block;
+  width: 90%;
+  height: 40px;
+  padding: 15px;
+  border: none;
+  background-color: var(--Orange-500);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 300ms ease-in-out;
+  margin: 0px auto;
+}
+
+.rating-card__button:hover {
+  background-color: var(--White);
+}

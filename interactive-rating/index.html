@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+
+  <!-- Meta Tags -->
+  <meta name="author" content="Ezequiel Arevalo" />
+  <meta name="keywords" content="Frontend Mentor Challenge" />
+  <meta name="description" content="Frontend Mentor Challenge" />
+
+  <!-- Title -->
+  <title>Frontend Mentor | Interactive rating component</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/styles.css" />
+</head>
+
+<body>
+
+  <article class="rating-card">
+    <form method="post" class="rating-card__content">
+      <span class="rating-card__icon">
+        <img src="src/images/icon-star.svg" alt="Star Icon" width="15" height="15">
+      </span>
+      <!-- Rating state start -->
+       <h3 class="rating-card__title">How did we do?</h3>
+
+       <p class="rating-card__description">
+         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+       </p>
+
+       <div class="rating-card__numbers-content">
+        <label class="rating-card__numbers-item">
+          <input type="radio" name="rating" id="1" value="1" class="sr-only">
+          <data value="1">1</data>
+        </label>
+        <label class="rating-card__numbers-item">
+          <input type="radio" name="rating" id="2" value="2" class="sr-only">
+          <data value="2">2</data>
+        </label>
+        <label class="rating-card__numbers-item">
+          <input type="radio" name="rating" id="3" value="3" class="sr-only">
+          <data value="3">3</data>
+        </label>
+        <label class="rating-card__numbers-item">
+          <input type="radio" name="rating" id="4" value="4" class="sr-only">
+          <data value="4">4</data>
+        </label>
+        <label class="rating-card__numbers-item">
+          <input type="radio" name="rating" id="5" value="5" class="sr-only">
+          <data value="5">5</data>
+        </label>
+       </div>
+
+      <button type="submit" class="rating-card__button">
+        Submit
+      </button>
+      <!-- Rating state end -->
+    </>
+    <!-- Thank you state start -->
+    <div class="rating-card__review">
+      <img src="src/" alt="">
+      You selected <!-- Add rating here --> out of 5
+
+      Thank you!
+
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </div>
+    <!-- Thank you state end -->
+  </article>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
