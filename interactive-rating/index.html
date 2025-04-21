@@ -15,7 +15,7 @@
 
   <!-- Title -->
   <title>Frontend Mentor | Interactive rating component</title>
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="./src/css/reset.css" />
   <link rel="stylesheet" href="./src/css/styles.css" />
@@ -29,13 +29,14 @@
         <img src="src/images/icon-star.svg" alt="Star Icon" width="15" height="15">
       </span>
       <!-- Rating state start -->
-       <h3 class="rating-card__title">How did we do?</h3>
+      <h3 class="rating-card__title">How did we do?</h3>
 
-       <p class="rating-card__description">
-         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-       </p>
+      <p class="rating-card__description">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!
+      </p>
 
-       <div class="rating-card__numbers-content">
+      <div class="rating-card__numbers-content">
         <label class="rating-card__numbers-item">
           <input type="radio" name="rating" id="1" value="1" class="sr-only">
           <data value="1">1</data>
@@ -56,26 +57,27 @@
           <input type="radio" name="rating" id="5" value="5" class="sr-only">
           <data value="5">5</data>
         </label>
-       </div>
+      </div>
 
       <button type="submit" class="rating-card__button">
         Submit
       </button>
       <!-- Rating state end -->
-    </>
+    </form>
     <!-- Thank you state start -->
-    <div class="rating-card__review">
-      <img src="src/" alt="">
-      You selected <!-- Add rating here --> out of 5
-
-      Thank you!
-
-      We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch!
+    <div class="thank-you-card">
+      <img src="src/images/illustration-thank-you.svg" alt="Thank you illustration" class="thank-you-card__image">
+      <p class="thank-you-card__selected">You selected <span id="userReview">0</span> out of 5</p>
+      <p class="thank-you-card__title">Thank you!</p>
+      <p class="thank-you-card__text">
+        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+        touch!
+      </p>
     </div>
     <!-- Thank you state end -->
   </article>
 
   <script src="src/js/app.js"></script>
 </body>
+
 </html>
